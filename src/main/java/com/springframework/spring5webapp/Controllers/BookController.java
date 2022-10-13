@@ -1,4 +1,4 @@
-package Controllers;
+package com.springframework.spring5webapp.Controllers;
 
 import com.springframework.spring5webapp.repositories.BookRepository;
 import org.springframework.stereotype.Controller;
@@ -19,6 +19,6 @@ public class BookController {
 
         model.addAttribute("books", bookRepository.findAll());
 
-        return "books/list";
+        return "books/list" ;
     }
 }
